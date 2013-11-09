@@ -1,0 +1,19 @@
+/* hero-img is for fullscreen background images. Resizes nicely for smaller screens too! */
+@mixin hero-img($image-url) {
+  background: url($image-url) no-repeat 50%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+}
+
+/* Standard border-radius mixin. Round corners all over the place */
+@mixin border-radius($radius) {
+   -webkit-border-radius:$radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}

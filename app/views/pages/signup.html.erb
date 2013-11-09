@@ -1,0 +1,17 @@
+<div class="hero-img">
+  <%= render 'navbar' %>
+  <div class="container">
+    <div class="row">
+      <aside class="col-md-2"></aside>
+      <main role="main" id="signup" class="col-md-8">
+        <h1>Don't just lay there,<br /><span class="signup-subtext">get involved!</span></h1>
+        <%= form_tag('lists#subscribe') do %>
+          <%= label_tag(:q, "Search for:") %>
+          <%= text_field_tag(:q) %>
+          <%= submit_tag("Search") %>
+        <% end %>
+      </main>
+      <aside class="col-md-2"></aside>
+    </div>
+  </div>
+</div>
