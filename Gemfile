@@ -32,6 +32,8 @@ group :production do
   gem 'rails_12factor'
 end
 
+# API Gems
+gem 'mailchimp-api'
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
 
